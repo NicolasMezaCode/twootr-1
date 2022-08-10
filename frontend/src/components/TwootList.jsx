@@ -8,6 +8,7 @@ export default function TwootList(props) {
 
     useEffect (() => {
         axios.get(`https://twoot-app.herokuapp.com/twoots`).then((res) => {
+            console.log(" ")
         setTwoots(res.data);
         });
     }, []);

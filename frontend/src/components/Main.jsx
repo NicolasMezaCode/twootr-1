@@ -12,7 +12,7 @@ export default function Main(props) {
 
     useEffect(() => {
         axios.get('https://twoot-app.herokuapp.com/twoots').then((res) => {
-          console.log('get twoots data', res.data);
+          console.log('get twoots buenas data', res.data);
           setTwoot(res.data);
         }).catch(err=>console.log(err))
     }, []);
