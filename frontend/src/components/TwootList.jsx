@@ -7,7 +7,7 @@ export default function TwootList(props) {
     const [twoots, setTwoots] = useState([]);
 
     useEffect (() => {
-        axios.get(`https://twoot-app.herokuapp.com/twoots`).then((res) => {
+        axios.get(`https://twoot-react.herokuapp.com/twoots`).then((res) => {
             console.log(" ")
         setTwoots(res.data);
         });
