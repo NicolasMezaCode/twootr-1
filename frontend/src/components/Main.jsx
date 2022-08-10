@@ -11,7 +11,7 @@ export default function Main(props) {
     const [name,setName]=useState('Nicolas M');
 
     useEffect(() => {
-        axios.get('http://localhost:8080/twoots').then((res) => {
+        axios.get('https://twoot-app.herokuapp.com/twoots').then((res) => {
           console.log('get twoots data', res.data);
           setTwoot(res.data);
         }).catch(err=>console.log(err))
